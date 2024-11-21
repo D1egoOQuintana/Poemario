@@ -1,0 +1,89 @@
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.form-poema {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.form-poema:before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    right: -30px;
+    bottom: -30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    z-index: 0;
+    transition: all 0.3s;
+}
+
+.form-poema:hover:before {
+    transform: scale(1.05);
+}
+
+.form-control {
+    border: 2px solid #6a11cb;
+    border-radius: 10px;
+    padding: 12px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 10px rgba(37, 117, 252, 0.5);
+}
+
+.btn-primary {
+    background-color: #6a11cb;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #2575fc;
+    transform: translateY(-2px);
+}
+
+.alert {
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.btn-secondary {
+    background-color: #6c757d; /* Color de fondo */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 12px; /* Espaciado interno */
+    font-size: 1.2rem; /* Tamaño de fuente */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268; /* Color de fondo al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
